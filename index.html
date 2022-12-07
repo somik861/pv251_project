@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Europe energy consumption</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <link href="public/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="div_title">
+      <svg viewBox="0 0 200 50">
+        <text x="100" y="45" text-anchor="middle" class="disclaimer_title">Europe energy consumption
+        </text>
+      </svg>
+    </div>
+    <div id="div_header"></div>
+    <div id="div_disclaimer_icon">
+      <img src="public/info_icon.svg" width="100%">
+    </div>
+    <div id="div_disclaimer">
+      <svg viewBox="0 0 400 170">
+        <rect x="10" y="10" width="390" height="160" rx="15" fill="#202020"></rect>
+        <text x="20" y="30" class="disclaimer_title">Disclaimer</text>
+        <text x="20" y="50" class="disclaimer_headline">Source and credits</text>
+        <text x="20" y="60" class="disclaimer_text">Dataset used for visualisation was obtained on <a fill="white"
+    xlink:href="https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption">kaggle.com</a>.
+        </text>
+        <text x="20" y="70" class="disclaimer_text">This visualisation was created using <a fill="white" xlink:href="https://d3js.org">d3</a> javascript library. </text>
+        <text x="20" y="80" class="disclaimer_text">Special credit should also be granted to github user <a fill="white"
+    xlink:href="https://gist.github.com/johnwalley/e1d256b81e51da68f7feb632a53c3518">johnwalley</a> for implementing d3 sliders. </text>
+        <text x="20" y="100" class="disclaimer_headline">Preprocessing</text>
+        <text x="20" y="110" class="disclaimer_text">Obtained data were preprocessed in the following manner:</text>
+        <text x="20" y="120" class="disclaimer_text">1) Unneeded columns and rows were stripped.</text>
+        <text x="20" y="130" class="disclaimer_text">2) Only values for population, electricity per capita and source share percentages were used.</text>
+        <text x="20" y="140" class="disclaimer_text">3) Where data for current country-year did not have NaNs, percentages were renormalized to sum-up to 100%. </text>
+        <text x="30" y="150" class="disclaimer_text"> Most of the time, the difference was within 1%, so no noticible change should be percieved.</text>
+        <text x="20" y="160" class="disclaimer_text">4) NaNs are preserved outside of aggregation. Aggregation ignores NaNs as long as it gets at least one valid number. </text>
+      </svg>
+    </div>
+    <div id="div_map">
+      <div id="div_heat_legend"></div>
+      <div id="div_map_image"></div>
+      <div id="div_hover_region"></div>
+    </div>
+    <div id="div_timeline">
+      <div id="div_stackchart"></div>
+      <div id="div_timeslider"></div>
+    </div>
+    <script type="text/javascript" src="public/myD3app.js"></script>
+  </body>
+</html>

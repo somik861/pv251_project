@@ -1,0 +1,140 @@
+#div_header {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 10px;
+    width: 15%;
+}
+
+
+#div_map {
+    /* border: 1px solid rgb(31, 92, 213); */
+    margin-top: 75px;
+}
+
+#svg_map {
+    /* border: 1px solid brown; */
+    width: 100%;
+    height: auto;
+}
+
+#div_map_image {
+    padding-left: 29%;
+    padding-right: 29%;
+    height: auto;
+}
+
+#div_hover_region {
+    position: absolute;
+    width: 20%;
+    /* border: 1px solid salmon; */
+    top: 30%;
+    right: 3%;
+    visibility: hidden;
+}
+
+#div_title{
+    position: absolute;
+    width: 30%;
+    top: -9%;
+    right: 40%;
+}
+
+#div_timeline {
+    /* border: 1px solid rgb(14, 239, 130); */
+    width: 70%;
+    margin: auto;
+}
+
+#div_stackchart {
+    /* border: 1px solid yellow; */
+}
+
+#div_disclaimer {
+    /* border: 2px solid rgb(9, 77, 44); */
+    top: 50px;
+    right: 50px;
+    width: 50%;
+    opacity: 90%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#div_disclaimer_icon {
+    /* border: 1px solid rebeccapurple; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 3%;
+}
+
+#div_heat_legend {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    width: 9%;
+    /* border: 1px solid seagreen; */
+}
+
+body {
+    background: #30302e;
+    font: 1em "Trebuchet MS";
+    color: #c0c0c0;
+}
+
+.subline {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+}
+
+.heat_legend_text {
+    font-weight: thin;
+    fill: rgb(183, 168, 168);
+}
+
+.headline {
+    font-size: 150%;
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+}
+
+.hover_region_text {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 75%;
+}
+
+.hover_legend_text {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 25%;
+}
+
+.hover_legend_desc {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 35%;
+}
+
+.hover_bar_desc {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 15%;
+}
+
+.disclaimer_title {
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 100%;
+}
+
+.disclaimer_headline{
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 60%;
+}
+
+.disclaimer_text{
+    font-weight: thin;
+    fill: rgb(206, 206, 206);
+    font-size: 40%;
+}
